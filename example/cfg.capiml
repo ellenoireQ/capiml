@@ -1,0 +1,29 @@
+# WIP Documentation
+# Example usage capibara minimal language config 
+#
+# How to declare a variable in capiml
+# First thing we need to do is declaring a parent variable
+# example:
+#
+# MyParentValue:
+# --- child1_value:"MyFirstValue"
+# --- child2_value:"MySecondValue"
+# 
+# Capiml also support Array, List
+# example:
+# 
+# SwimmingCapibara:
+# --- coolChild1: ["Capibara 1", "Capibara 2", "Capibara 3"]
+# --- coolChild2: {1, 2, 3, 4, 5}
+#
+# note: --- : is indent
+#
+# Example Real World usage of capiml
+#
+main_serv:
+  url: "localhost"
+  port: 8080
+  env: {
+    # all started env.dev
+    dev: "development"
+  }
